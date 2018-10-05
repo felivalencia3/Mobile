@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HTTP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGC-PR-cnJ">
+                                <rect key="frame" x="36" y="152" width="343" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Qh-DJ-jDv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And we'll translate it to English!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taT-Mz-doN">
+                                <rect key="frame" x="17.666666666666657" y="96" width="379" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Ydv-nd-jVT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="29"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzH-N9-cRH">
+                                <rect key="frame" x="147" y="190" width="120" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="2wp-La-dZ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="translate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Uv-fl-LVC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter text in Spanish below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiS-Op-abr">
+                                <rect key="frame" x="20" y="30" width="374" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="D3z-3h-N5N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Your translated text will be here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="urj-hz-nA5">
+                                <rect key="frame" x="20" y="285" width="374" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aGC-PR-cnJ" firstAttribute="centerX" secondItem="GzH-N9-cRH" secondAttribute="centerX" id="2lD-Lh-CXK"/>
+                            <constraint firstItem="aGC-PR-cnJ" firstAttribute="top" secondItem="taT-Mz-doN" secondAttribute="bottom" constant="17" id="7ur-ri-PI5"/>
+                            <constraint firstItem="jiS-Op-abr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7zW-xI-q26"/>
+                            <constraint firstItem="taT-Mz-doN" firstAttribute="centerX" secondItem="aGC-PR-cnJ" secondAttribute="centerX" id="FpR-gc-DHv"/>
+                            <constraint firstItem="taT-Mz-doN" firstAttribute="top" secondItem="jiS-Op-abr" secondAttribute="bottom" constant="8" symbolic="YES" id="TrA-RS-cWs"/>
+                            <constraint firstItem="GzH-N9-cRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="UDS-LO-vfk"/>
+                            <constraint firstItem="jiS-Op-abr" firstAttribute="centerX" secondItem="taT-Mz-doN" secondAttribute="centerX" id="g53-oo-2eu"/>
+                            <constraint firstItem="GzH-N9-cRH" firstAttribute="top" secondItem="aGC-PR-cnJ" secondAttribute="bottom" constant="8" symbolic="YES" id="miJ-Qx-lUE"/>
+                            <constraint firstItem="jiS-Op-abr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="sdq-BL-Z4B"/>
+                            <constraint firstItem="aGC-PR-cnJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="vWO-yS-tcX"/>
+                            <constraint firstItem="jiS-Op-abr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zGv-Ds-7fg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="butt" destination="GzH-N9-cRH" id="byd-GR-iZO"/>
+                        <outlet property="result" destination="urj-hz-nA5" id="de2-Cm-5Iz"/>
+                        <outlet property="textField" destination="aGC-PR-cnJ" id="28f-zE-Ds3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.710144927536234" y="87.228260869565219"/>
+        </scene>
+    </scenes>
+</document>
