@@ -41,14 +41,10 @@ import Foundation
 import UIKit
 import Alamofire
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    var locationManager: CLLocationManager!
-    @IBOutlet weak var input: UITextField!
-    var currentLocation: CLLocation!
-    @IBOutlet weak var result: UITextView!
+    var locationManager: CLLocationManager!;@IBOutlet weak var input: UITextField!
+    var currentLocation: CLLocation!;@IBOutlet weak var result: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     @IBAction func findDistance(_ sender: UIButton) {
         print("button pressed")
