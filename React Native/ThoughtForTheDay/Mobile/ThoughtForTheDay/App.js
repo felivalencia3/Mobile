@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableHighlight, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight, ScrollView, Linking} from 'react-native';
 
 export default class App extends Component {
     constructor(props) {
@@ -15,18 +15,6 @@ export default class App extends Component {
         this.handleClick()
     }
     handleClick(event) {
-        /*fetch('https://localhost:8081/random')
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(myJson) {
-                let article = JSON.stringify(myJson);
-                const title = article.title
-                    , info = article.info
-                    , url = article.url;
-                this.setState({articleTitle: title,  articleInfo: info, articleURL: url})
-            });
-            */
         fetch('http://192.168.0.12:8081/random')
             .then((response) => response.json())
             .then((responseJson) => {
@@ -43,7 +31,7 @@ export default class App extends Component {
               <Text style={styles.title}>Your article for the day:</Text>
               <Text style={styles.thought}>{this.state.articleTitle}</Text>
               <Text style={styles.title}>Read More Here:</Text>
-              <Text style={styles.url}>{this.state.articleURL}</Text>
+              <Text style={styles.url} onPress={() => Linking.openURL(this.state.articleURL)}>{this.state.articleURL}</Text>
               <TouchableHighlight onPress={this.handleClick} underlayColor="white">
                   <View style={styles.button}>
                       <Text style={styles.buttonText}>Get a random article!</Text>
