@@ -15,7 +15,7 @@ export default class App extends Component {
         this.handleClick()
     }
     handleClick(event) {
-        fetch('http://192.168.0.12:8081/random')
+        fetch('http://172.16.3.77:8081/random')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({articleTitle: responseJson.title, articleInfo: responseJson.info, articleURL: responseJson.url})
