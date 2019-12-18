@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1EABA25F216E1B7E00B76C36"
-               BuildableName = "FindDist2.app"
-               BlueprintName = "FindDist2"
-               ReferencedContainer = "container:FindDist2.xcodeproj">
+               BlueprintIdentifier = "1E7109A523778738009A3BB5"
+               BuildableName = "FoodTracker.app"
+               BlueprintName = "FoodTracker"
+               ReferencedContainer = "container:FoodTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,9 +27,17 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1E2A6E282384323900018119"
+               BuildableName = "FoodTrackerTests.xctest"
+               BlueprintName = "FoodTrackerTests"
+               ReferencedContainer = "container:FoodTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -46,14 +53,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1EABA25F216E1B7E00B76C36"
-            BuildableName = "FindDist2.app"
-            BlueprintName = "FindDist2"
-            ReferencedContainer = "container:FindDist2.xcodeproj">
+            BlueprintIdentifier = "1E7109A523778738009A3BB5"
+            BuildableName = "FoodTracker.app"
+            BlueprintName = "FoodTracker"
+            ReferencedContainer = "container:FoodTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <LocationScenarioReference
+         identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+         referenceType = "1">
+      </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -61,6 +70,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1E7109A523778738009A3BB5"
+            BuildableName = "FoodTracker.app"
+            BlueprintName = "FoodTracker"
+            ReferencedContainer = "container:FoodTracker.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
